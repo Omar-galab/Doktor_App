@@ -1,3 +1,4 @@
+import 'package:doctor_app/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -13,14 +14,22 @@ fontWeight: FontWeight.w700,
 
 );
 static TextStyle getS10W400 = TextStyle(
-fontSize: 10.sp,
+fontSize: 12.sp,
 fontWeight: FontWeight.w400,
+color: ColorsManager.maingray,
 
 );
 static TextStyle getS32BlueW700 = TextStyle(
 fontSize: 32.sp,
 fontWeight: FontWeight.w700,
 color: Colors.blue,
+
+);
+static TextStyle getS16W500 = TextStyle(
+fontSize: 16.sp,
+fontWeight: FontWeight.w500,
+color: Colors.white,
+
 
 );
 }

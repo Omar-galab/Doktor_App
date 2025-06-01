@@ -12,7 +12,7 @@ class DoctorLogoAndName extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        SvgPicture.asset(ImagesManager.doctorWwithOpecLlogo),
+        SvgPicture.asset(ImagesManager.doctorLogo),
         SizedBox(
           width: 10.w,
         ),

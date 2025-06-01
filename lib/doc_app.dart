@@ -12,8 +12,10 @@ class DocApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp.router(
+        
         debugShowCheckedModeBanner: false,
         routerConfig: AppRouter.router,
+
         theme: ThemeData(
           primaryColor: ColorsManager.mainBlue,
           scaffoldBackgroundColor: Colors.white,
