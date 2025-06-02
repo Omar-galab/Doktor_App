@@ -3,6 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextStyleManager {
+  static TextStyle getS13blueW400 = TextStyle(
+fontSize: 14.sp,
+fontWeight: FontWeight.w400,
+color: ColorsManager.mainBlue,
+
+);
 static TextStyle getS14W400 = TextStyle(
 fontSize: 14.sp,
 fontWeight: FontWeight.w400,

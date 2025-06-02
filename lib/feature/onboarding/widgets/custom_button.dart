@@ -15,8 +15,9 @@ class CustomButton extends StatelessWidget {
         backgroundColor: WidgetStateProperty.all(ColorsManager.mainBlue),
         shape: WidgetStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r))),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        
         minimumSize: WidgetStateProperty.all(
-          const Size(double.infinity, 52),
+           Size(double.infinity, 52.h),
         )
       ),
       onPressed:onPressed,
