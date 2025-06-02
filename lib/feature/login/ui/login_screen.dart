@@ -1,8 +1,9 @@
-import 'package:doctor_app/core/helpers/images.dart';
+
 import 'package:doctor_app/core/theming/colors.dart';
 import 'package:doctor_app/core/theming/text_style.dart';
+import 'package:doctor_app/feature/login/ui/widgets/custom_divider.dart';
 import 'package:doctor_app/feature/login/ui/widgets/custom_text_form.dart';
-import 'package:doctor_app/feature/login/ui/widgets/custom_social_button.dart';
+import 'package:doctor_app/feature/login/ui/widgets/have_account_or_not_.dart';
 import 'package:doctor_app/feature/login/ui/widgets/social_button.dart';
 import 'package:doctor_app/feature/onboarding/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
@@ -27,7 +28,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 30.h),
+              SizedBox(height: 70.h),
               Text(
                 "Welcome Back",
                 style: TextStyleManager.getS24W700.copyWith(
@@ -78,54 +79,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 30),
-              Row(
-                children: [
-                  Expanded(
-                    child: Divider(
-                      color: ColorsManager.mainlightGray,
-                      thickness: 1.h,
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10.w),
-                    child: Text(
-                      'Or Login With',
-                      style: TextStyleManager.getS10W400.copyWith(
-                        color: ColorsManager.maingray,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Divider(
-                      color: ColorsManager.mainlightGray,
-                      thickness: 1.h,
-                    ),
-                  ),
-                ],
-              ),
-               const SizedBox(height: 30),
-               // Login with google, facebook and instgram
+              const CustomDivider(),
+              const SizedBox(height: 30),
+              // Login with google, facebook and instgram
               const SocialButton(),
-               const SizedBox(height: 20),
-               // Already have an account? Sign up
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    "Don't have an account?",
-                    style: TextStyleManager.getS14W400.copyWith(
-                      color: ColorsManager.maingray,
-                    ),
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Sign Up",
-                      style: TextStyleManager.getS10W400.copyWith(color: ColorsManager.mainBlue),
-                    ),
-                  )
-                ]
-              )
+              const SizedBox(height: 20),
+              // Already have an account? Sign up
+              const HaveAccountOR(),
             ],
           ),
         ),
@@ -133,5 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 }
+
+
 
 
